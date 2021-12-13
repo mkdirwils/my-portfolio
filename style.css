@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+
+ font-family: 'Montserrat', sans-serif;
+  background-color: #dddddd;
+  margin: 32px;
+}
+
+.logo a{
+  font-size: 2em;
+  font-weight: 900;
+  padding: 40px 0 40px 68px;
+  color: #119910;
+  text-decoration: none;
+}
+
+
+
+.physio-blog, .physio-blog:visited {
+  color: white;
+  text-decoration: none;
+  border-bottom: 1px solid #119910;
+}
+
+.physio-blog:hover, .physio-blog:visited:hover {
+  color: grey;
+  border: none;
+}
+
+
+
+
+.description {
+  font-size: 18px;
+  background-color: #242526;
+  line-height: 1.5;
+  color: white;
+  width: 65vw;
+  margin: 16px auto;
+  text-align: center;
+  padding: 48px;
+  box-shadow: 3px 3px 3px grey;
+  border-radius: 5px;
+}
+
+.description img {
+  margin-bottom: 8px;
+  border-radius: 50%;
+}
+
+.description p {
+  font-size: 16px;
+  margin: 16px;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.fancy-buttons {
+  display: flex;
+  justify-content: center;
+  margin-right: auto;
+  gap: 12px;
+}
+
+.fancy {
+  width: 20%;
+  text-align: center;
+  padding: 32px;
+  background-color: #119910;
+  box-shadow: 3px 3px 3px grey;
+  border-radius: 5px;
+}
+
+ .fancy:hover {
+  transform: translate(0, -10px);
+}
+
+.fancy p {
+  color: white;
+  font-size: 14px;
+  margin: 8px 0 0 0;
+}
+
+
+footer {
+ text-align: center;
+ font-size: 16px;
+ line-height: 1.4;
+ padding: 68px 0 0 0;
+}
+
+footer a, footer a:visited{
+ text-decoration: none;
+ font-size: 1.2em;
+ border-bottom: 2px solid #119910;
+ font-weight: 700;
+ color: #242526;
+}
+
+footer a:hover, footer a:visited:hover{
+ color: grey;
+ border: none;
+
+}
+
+footer p {
+ padding-top: 4px;
+ font-size: 0.9em;
+ color: #242526;
+}
+
+/* media queries */
+
+@media only screen and (max-width: 729px) {
+ .fancy {
+  padding: 24px;
+  width: auto;
+}
+}
+
+@media only screen and (max-width: 649px) {
+ .fancy {
+  padding: 16px;
+  width: auto;
+}
+
+
+.logo {
+ text-align: center;
+ margin-right: 50px;
+}
+
+}
+
+@media only screen and (max-width: 569px) {
+ .fancy {
+  padding: 8px;
+  width: auto;
+}
+
+.logo {
+ text-align: center;
+}
+}
+
