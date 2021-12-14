@@ -29,7 +29,11 @@ body {
   margin: var(--xl);
 }
 
-.logo a{
+header {
+  margin-bottom: var(--l);
+}
+
+.logo {
   font-size: 2em;
   font-weight: 900;
   padding: var(--xxl) 0 var(--xxxl) calc(var(--s) * 11);
@@ -54,7 +58,7 @@ body {
 
 
 .description {
-  font-size: 18px;
+  font-size: 1.1em;
   background-color: var(--dark-grey);
   line-height: 1.5;
   color: var(--white);
@@ -72,7 +76,7 @@ body {
 }
 
 .description p {
-  font-size: var(--m);
+  font-size: 1em;
   margin: var(--m);
 }
 
@@ -81,6 +85,12 @@ body {
   justify-content: center;
   gap: 12px;
 }
+
+ .twitter:hover, .instagram:hover, .github:hover {
+  transform: translate(-5px, -5px);
+}
+
+
 
 .fancy-buttons {
   display: flex;
@@ -99,7 +109,7 @@ body {
 }
 
  .fancy:hover {
-  transform: translate(0, -10px);
+  transform: translate(-5px, -10px);
 }
 
 .fancy p {
@@ -152,22 +162,63 @@ footer p {
 }
 
 
-.logo {
- text-align: center;
- margin-right: var(--xxxl);
+header {
+  text-align: center;
+  margin-right: 96px;
 }
 
 }
 
 @media only screen and (max-width: 569px) {
+  
+  .description {
+    min-width: 80vw;
+  }
+  
+   .description h1 {
+    font-size: 1.4em;
+  }
+  
+  .description p {
+    font-size: 1.1em;
+  }
+  
+  
+  
  .fancy {
   padding: var(--s);
-  width: auto;
+  width:0 auto;
 }
 
-.logo {
- text-align: center;
+header {
+  text-align: center;
+  margin-right: 96px;
 }
+}
+
+@media only screen and (max-width: 411px) {
+  
+  
+  .description h1 {
+    font-size: 1em;
+  }
+  
+  .description p {
+    font-size: 0.8em;
+  }
+}
+
+@media only screen and (max-width: 329px) {
+  
+   .description h1 {
+    font-size: 0.9em;
+  }
+  
+  .description p {
+    font-size: 0.7em;
+  }
+}
+  
 }
 
 
