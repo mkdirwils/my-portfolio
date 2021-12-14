@@ -1,5 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap');
 
+:root {
+  --primary-color: #119910;
+  --body-color: #dddddd;
+  --dark-grey: #242526;
+  --grey: 	#808080;
+  --white: #fff;
+  
+  --xs: 4px;
+  --s: 8px;
+  --m: 16px;
+  --l: 24px;
+  --xl: 32px;
+  --xxl: 40px;
+  --xxxl:48px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -9,28 +25,28 @@
 body {
 
  font-family: 'Montserrat', sans-serif;
-  background-color: #dddddd;
-  margin: 32px;
+  background-color: var(--body-color);
+  margin: var(--xl);
 }
 
 .logo a{
   font-size: 2em;
   font-weight: 900;
-  padding: 40px 0 40px 68px;
-  color: #119910;
+  padding: var(--xxl) 0 var(--xxxl) calc(var(--s) * 11);
+  color: var(--primary-color);
   text-decoration: none;
 }
 
 
 
 .physio-blog, .physio-blog:visited {
-  color: white;
+  color: var(--white);
   text-decoration: none;
-  border-bottom: 1px solid #119910;
+  border-bottom: 1px solid var(--primary-color);
 }
 
 .physio-blog:hover, .physio-blog:visited:hover {
-  color: grey;
+  color: var(--grey);
   border: none;
 }
 
@@ -39,25 +55,25 @@ body {
 
 .description {
   font-size: 18px;
-  background-color: #242526;
+  background-color: var(--dark-grey);
   line-height: 1.5;
-  color: white;
+  color: var(--white);
   width: 65vw;
-  margin: 16px auto;
+  margin: var(--m) auto;
   text-align: center;
-  padding: 48px;
-  box-shadow: 3px 3px 3px grey;
+  padding: var(--xxxl);
+  box-shadow: 3px 3px 3px var(--grey);
   border-radius: 5px;
 }
 
 .description img {
-  margin-bottom: 8px;
+  margin-bottom: var(--s);
   border-radius: 50%;
 }
 
 .description p {
-  font-size: 16px;
-  margin: 16px;
+  font-size: var(--m);
+  margin: var(--m);
 }
 
 .socials {
@@ -76,8 +92,8 @@ body {
 .fancy {
   width: 20%;
   text-align: center;
-  padding: 32px;
-  background-color: #119910;
+  padding: var(--xl);
+  background-color: var(--primary-color);
   box-shadow: 3px 3px 3px grey;
   border-radius: 5px;
 }
@@ -87,65 +103,65 @@ body {
 }
 
 .fancy p {
-  color: white;
+  color: var(--white);
   font-size: 14px;
-  margin: 8px 0 0 0;
+  margin: var(--s) 0 0 0;
 }
 
 
 footer {
  text-align: center;
- font-size: 16px;
+ font-size: var(--m);
  line-height: 1.4;
- padding: 68px 0 0 0;
+ padding: calc(var(--s)*8  + var(--xs)) 0 0 0;
 }
 
 footer a, footer a:visited{
  text-decoration: none;
  font-size: 1.2em;
- border-bottom: 2px solid #119910;
+ border-bottom: 2px solid var(--primary-color);
  font-weight: 700;
- color: #242526;
+ color: var(--dark-grey);
 }
 
 footer a:hover, footer a:visited:hover{
- color: grey;
+ color: var(--grey);
  border: none;
 
 }
 
 footer p {
- padding-top: 4px;
+ padding-top: var(--xs);
  font-size: 0.9em;
- color: #242526;
+ color: var(--dark-grey);
 }
 
 /* media queries */
 
 @media only screen and (max-width: 729px) {
  .fancy {
-  padding: 24px;
+  padding: var(--l);
   width: auto;
 }
 }
 
 @media only screen and (max-width: 649px) {
  .fancy {
-  padding: 16px;
+  padding: var(--m);
   width: auto;
 }
 
 
 .logo {
  text-align: center;
- margin-right: 50px;
+ margin-right: var(--xxxl);
 }
 
 }
 
 @media only screen and (max-width: 569px) {
  .fancy {
-  padding: 8px;
+  padding: var(--s);
   width: auto;
 }
 
@@ -153,4 +169,5 @@ footer p {
  text-align: center;
 }
 }
+
 
